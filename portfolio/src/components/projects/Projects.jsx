@@ -6,7 +6,7 @@ const Projects = () => {
     const projects = [
         {
             title: "Time Complexity Analyzer",
-            description: "A full-featured online shopping platform built with MERN stack. Features include user authentication, product filtering, shopping cart, and Stripe payment integration.",
+            description: "A Web App which helps beginners to understand time complexity of algorithms. It helps u learn and understand time complexity of algorithms by helping u to practice on different topics and helps u to analyze time complexity of code and algorithms. ",
             image: projectImg,
             tags: ["React", "Node.js", "MongoDB", "Tailwind"],
             links: {
@@ -16,7 +16,7 @@ const Projects = () => {
         },
         {
             title: "Blood Bank Locator",
-            description: "A collaborative task manager with real-time updates using Socket.io. Users can create boards, drag-and-drop tasks, and assign team members.",
+            description: "Service that helps u instantly locate and find nearby blood banks in a city, so that no user needs to manually search and waste their time.The search is based on city which filters out banks in seconds",
             image: projectImg,
             tags: ["Python", "Flask", "Pandas"],
             links: {
@@ -60,9 +60,9 @@ const Projects = () => {
 
                 {/* View All Button */}
                 <div className='mt-16 flex justify-center'>
-                    <button href="https://github.com/wrexrus" className='px-8 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 text-white font-medium transition-all duration-300 hover:scale-105 backdrop-blur-sm'>
+                    <a href="https://github.com/wrexrus" className='px-8 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 text-white font-medium transition-all duration-300 hover:scale-105 backdrop-blur-sm'>
                         View All Projects
-                    </button>
+                    </a>
                 </div>
 
             </div>

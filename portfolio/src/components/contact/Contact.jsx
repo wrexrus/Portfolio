@@ -35,26 +35,26 @@ const Contact = () => {
                             <ContactInfoCard
                                 icon={Mail}
                                 label="Email"
-                                value="hello@johndoe.dev"
+                                value="rushabhwagh125@gmail.com"
                                 link="mailto:hello@johndoe.dev"
                             />
                             <ContactInfoCard
                                 icon={MapPin}
                                 label="Location"
-                                value="San Francisco, CA"
+                                value="Pune Maharashtra, India"
                             />
                             <ContactInfoCard
                                 icon={Phone}
                                 label="Phone"
-                                value="+1 (555) 123-4567"
-                                link="tel:+15551234567"
+                                value="+91-9579603805"
+                                link="tel:+919579603805"
                             />
                         </div>
 
                         {/* Social Links */}
                         <div className='flex gap-4 pt-2'>
-                            <SocialButton icon={Github} href="#" />
-                            <SocialButton icon={Linkedin} href="#" />
+                            <SocialButton icon={Github} href="https://github.com/wrexrus" />
+                            <SocialButton icon={Linkedin} href="https://www.linkedin.com/in/rushabh-wagh-125/" />
                             <SocialButton icon={Twitter} href="#" />
                         </div>
                     </div>

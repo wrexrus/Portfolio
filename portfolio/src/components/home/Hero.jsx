@@ -1,11 +1,16 @@
+import { useState } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import profilePic from '../../assets/imagepic.jpeg';
+import ResumeModal from '../ResumeModal';
+
 const Hero = () => {
+  const [showResume, setShowResume] = useState(false);
+
   return (
-    <section className='min-h-screen flex items-center justify-center  pt-20 px-6cursor-pointer '>
+    <section className='min-h-screen flex items-center justify-center pt-20 px-6 cursor-pointer'>
       <div className='max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-20'>
 
-        <div className='w-full md:w-1/1  flex flex-col items-center md:items-start text-center md:text-left space-y-6'>
+        <div className='w-full md:w-1/1 flex flex-col items-center md:items-start text-center md:text-left space-y-6'>
           <div className='space-y-2'>
             <p className="text-blue-400 font-medium tracking-wide text-lg animate-fade-in">Hello, I'm</p>
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
@@ -22,18 +27,21 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-2">
-            <button className="cursor-pointer px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg shadow-blue-500/30 transition-all duration-300 hover:scale-105">
+            <a href="#projects" className="cursor-pointer px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg shadow-blue-500/30 transition-all duration-300 hover:scale-105">
               View Projects
-            </button>
-            <button className="cursor-pointer px-8 py-3 bg-transparent border border-gray-600 hover:border-blue-500 text-gray-300 hover:text-white font-semibold rounded-lg transition-all duration-300 hover:bg-white/5">
+            </a>
+            <button
+              onClick={() => setShowResume(true)}
+              className="cursor-pointer px-8 py-3 bg-transparent border border-gray-600 hover:border-blue-500 text-gray-300 hover:text-white font-semibold rounded-lg transition-all duration-300 hover:bg-white/5"
+            >
               Resume
             </button>
           </div>
 
           <div className='flex gap-6 mt-4'>
             <SocialLink href="https://github.com/wrexrus" icon={<Github size={24} />} />
-            <SocialLink href="https://www.linkedin.com/in/rushabh-wagh-193b15229/" icon={<Linkedin size={24} />} />
-            <SocialLink href="rushabhwagh125@gmail.com" icon={<Mail size={24} />} />
+            <SocialLink href="https://www.linkedin.com/in/rushabh-wagh-125/" icon={<Linkedin size={24} />} />
+            <SocialLink href="mailto:rushabhwagh125@gmail.com" icon={<Mail size={24} />} />
           </div>
         </div>
 
@@ -50,6 +58,8 @@ const Hero = () => {
         </div>
 
       </div>
+
+      <ResumeModal isOpen={showResume} onClose={() => setShowResume(false)} />
     </section>
   )
 }

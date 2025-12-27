@@ -90,22 +90,22 @@ const Skills = () => {
         {
             title: "Frontend",
             icon: Code2,
-            skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "JavaScript", "HTML/CSS"]
+            skills: ["React", "Tailwind CSS", "JavaScript", "HTML/CSS"]
         },
         {
             title: "Backend",
             icon: Terminal,
-            skills: ["Node.js", "Express.js", "Python", "REST APIs", "GraphQL", "WebSockets"]
+            skills: ["Node.js", "Express.js", "REST APIs",]
         },
         {
             title: "Databases",
             icon: Database,
-            skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase", "Prisma"]
+            skills: ["MongoDB", "MySQL"]
         },
         {
             title: "Tools & DevOps",
             icon: Wrench,
-            skills: ["Git", "Docker", "AWS", "Vercel", "Linux", "CI/CD"]
+            skills: ["Git", "Vercel","Render","MongoDB Atlas"]
         }
     ]
 

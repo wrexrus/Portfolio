@@ -11,11 +11,21 @@ const App = () => {
     <div>
       <Navbar />
       <Hero />
-      <About />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Contact />
+      <div id="about" className="scroll-mt-24">
+        <About />
+      </div>
+      <div id="experience" className="scroll-mt-24">
+        <Experience />
+      </div>
+      <div id="skills" className="scroll-mt-24">
+        <Skills />
+      </div>
+      <div id="projects" className="scroll-mt-24">
+        <Projects />
+      </div>
+      <div id="contact" className="scroll-mt-24">
+        <Contact />
+      </div>
     </div>
   )
 }

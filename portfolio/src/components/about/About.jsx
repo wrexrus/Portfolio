@@ -19,9 +19,9 @@ const About = () => {
             <p className='mt-7'>Keeping hands on experience in open-source completed Hacktoberfest 2024 and 2025.</p>
           </p>
           <div className='flex gap-4'>
-            <button className='px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-medium hover:opacity-90 transition-opacity shadow-lg shadow-purple-500/25 cursor-pointer'>
+            <a href="#contact" className='px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-medium hover:opacity-90 transition-opacity shadow-lg shadow-purple-500/25 cursor-pointer'>
               Contact Me
-            </button>
+            </a>
           </div>
         </div>
 
