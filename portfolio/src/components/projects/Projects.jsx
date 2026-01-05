@@ -25,12 +25,12 @@ const Projects = () => {
             }
         },
         {
-            title: "",
-            description: "",
+            title: "Diabetes Prediction Model",
+            description: "Developed a ML pipeline which helps a user based on few fields that he/she is having diabetes or not",
             image: projectImg,
-            tags: ["React", "OpenAI API", "Cloudinary", "Express"],
+            tags: ["ML", "KNN", "XGBoost", "SVM"],
             links: {
-                github: "#",
+                github: "https://github.com/wrexrus/diabetes-model.git",
                 demo: "#"
             }
         }
@@ -60,7 +60,7 @@ const Projects = () => {
 
                 {/* View All Button */}
                 <div className='mt-16 flex justify-center'>
-                    <a href="https://github.com/wrexrus" className='px-8 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 text-white font-medium transition-all duration-300 hover:scale-105 backdrop-blur-sm'>
+                    <a href="https://github.com/wrexrus?tab=repositories" className='px-8 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 text-white font-medium transition-all duration-300 hover:scale-105 backdrop-blur-sm'>
                         View All Projects
                     </a>
                 </div>
